@@ -1,95 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Intissar EL QADI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background: linear-gradient(to right, #f8fafc, #e2e8f0);
-        }
-    </style>
+    <title>Portfolio de Intissar EL QADI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="font-sans">
-<header class="bg-gray-200 text-gray-800 py-6 shadow-lg animate-fade-in">
-    <div class="container mx-auto text-center">
-        <h1 class="text-4xl font-bold">Intissar EL QADI</h1>
-        <p class="text-lg mt-2">Étudiante en Développement Web | IPI - Toulouse</p>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Intissar EL QADI</h1>
+        <h2>Étudiante en Développement Web</h2>
+        <p>Passionnée par l'informatique et curieuse d'apprendre de nouvelles technologies, je suis à la recherche d'opportunités pour consolider mes compétences techniques.</p>
     </div>
 </header>
 
-<main class="container mx-auto px-4 py-8">
-    <!-- Section A propos -->
-    <section class="bg-white p-6 rounded-lg shadow-md mb-8 animate-slide-in">
-        <h2 class="text-2xl font-semibold mb-4">À propos de moi</h2>
-        <p>Passionnée par le développement web et les nouvelles technologies.</p>
-    </section>
+<!-- À propos -->
+<section id="about">
+    <div class="container">
+        <h2>À propos</h2>
+        <p>Je suis actuellement en 2ème année à l'école IPI Toulouse, spécialisée en développement web. Mon parcours académique et mes projets personnels m'ont permis d'acquérir des compétences solides en programmation et en gestion de projets. Je suis motivée par l'envie de créer des solutions innovantes et de contribuer à des projets ambitieux.</p>
+        <p><strong>Expertises :</strong> Développement web, création de bases de données, gestion de projets.</p>
+    </div>
+</section>
 
-    <!-- Section Compétences -->
-    <section class="bg-white p-6 rounded-lg shadow-md mb-8 animate-slide-in">
-        <h2 class="text-2xl font-semibold mb-4">Compétences</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">Python</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">JavaScript</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">HTML & CSS</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">SQL</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">PHP</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">Java</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">GitHub</span>
+<!-- Projets -->
+<section id="projects">
+    <div class="container">
+        <h2>Projets</h2>
+
+        <!-- Projet 1 : FilmJQUERY -->
+        <div class="project">
+            <h3>FilmJQUERY</h3>
+            <p>Un projet de gestion de films utilisant jQuery pour interagir avec une API de films. Ce projet permet de rechercher des films, d'afficher leurs détails et de les ajouter à une liste de favoris.</p>
+            <p><strong>Outils :</strong> HTML, CSS, JavaScript, jQuery</p>
+            <p><strong>Liens :</strong>
+                <a href="https://github.com/intissar120/FilmJQUERY" target="_blank">Repository Github</a>
+            </p>
+            <img src="capture-filmjquery.png" alt="Capture du projet FilmJQUERY">
         </div>
-    </section>
 
-    <!-- Section Langues -->
-    <section class="bg-white p-6 rounded-lg shadow-md mb-8 animate-slide-in">
-        <h2 class="text-2xl font-semibold mb-4">Langues</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">Français - Courant</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">Anglais - Intermédiaire</span>
-            <span class="px-4 py-2 bg-gray-300 rounded-lg">Arabe - Langue maternelle</span>
+        <!-- Projet 2 : CovidProjectAngular -->
+        <div class="project">
+            <h3>CovidProjectAngular</h3>
+            <p>Une application Angular qui affiche les statistiques mondiales sur le COVID-19. Ce projet utilise une API publique pour récupérer les données en temps réel et les afficher de manière interactive.</p>
+            <p><strong>Outils :</strong> Angular, TypeScript, HTML, CSS</p>
+            <p><strong>Liens :</strong>
+                <a href="https://github.com/intissar120/CovidProjectAngular" target="_blank">Repository Github</a>
+            </p>
+            <img src="capture-covidproject.png" alt="Capture du projet CovidProjectAngular">
         </div>
-    </section>
 
-    <!-- Section Projets -->
-    <section class="bg-white p-6 rounded-lg shadow-md mb-8 animate-slide-in">
-        <h2 class="text-2xl font-semibold mb-4">Projets Académiques</h2>
-        <ul class="list-disc list-inside space-y-2">
-            <li>Création d’une base de données pour la gestion du matériel et réservation de la salle LABO du campus.</li>
-            <li>Installation d'une VM pour configurer une base de données MySQL.</li>
+        <!-- Projet 3 : AngularProject -->
+        <div class="project">
+            <h3>AngularProject</h3>
+            <p>Un projet Angular qui démontre l'utilisation des composants, des services et du routage pour créer une application web dynamique. Ce projet inclut une gestion d'utilisateurs et des fonctionnalités CRUD.</p>
+            <p><strong>Outils :</strong> Angular, TypeScript, Bootstrap</p>
+            <p><strong>Liens :</strong>
+                <a href="https://github.com/intissar120/AngularProject" target="_blank">Repository Github</a>
+            </p>
+            <img src="capture-angularproject.png" alt="Capture du projet AngularProject">
+        </div>
+
+        <!-- Projet 4 : JS-Projects -->
+        <div class="project">
+            <h3>JS-Projects</h3>
+            <p>Une collection de petits projets JavaScript pour pratiquer les concepts de base et avancés de JavaScript. Ce projet inclut des exercices sur les fonctions, les événements, les manipulations du DOM, etc.</p>
+            <p><strong>Outils :</strong> JavaScript, HTML, CSS</p>
+            <p><strong>Liens :</strong>
+                <a href="https://github.com/intissar120/JS-Projects" target="_blank">Repository Github</a>
+            </p>
+            <img src="capture-jsprojects.png" alt="Capture du projet JS-Projects">
+        </div>
+
+        <!-- Projet 5 : projetSymfony -->
+        <div class="project">
+            <h3>projetSymfony</h3>
+            <p>Un projet Symfony qui met en œuvre une application web complète avec une base de données. Ce projet inclut la gestion des utilisateurs, des articles et des commentaires, ainsi que l'authentification.</p>
+            <p><strong>Outils :</strong> Symfony, PHP, Twig, MySQL</p>
+            <p><strong>Liens :</strong>
+                <a href="https://github.com/intissar120/projetSymfony" target="_blank">Repository Github</a>
+            </p>
+            <img src="capture-symfonyproject.png" alt="Capture du projet projetSymfony">
+        </div>
+    </div>
+</section>
+<!-- Compétences -->
+<section id="skills">
+    <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-category">
+            <h3>Langages</h3>
+            <ul>
+                <li>HTML - Expert</li>
+                <li>CSS - Expert</li>
+                <li>JavaScript - Intermédiaire</li>
+                <li>PHP - Intermédiaire</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Frameworks</h3>
+            <ul>
+                <li>Bootstrap - Intermédiaire</li>
+                <li>React - Débutant</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Outils</h3>
+            <ul>
+                <li>Git/Github - Intermédiaire</li>
+                <li>MySQL - Intermédiaire</li>
+                <li>VirtualBox - Intermédiaire</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter via :</p>
+        <ul>
+            <li><strong>Email :</strong> intissar.elqadi@gmail.com</li>
+            <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/intissar-el-qadi-00b908307/" target="_blank">linkedin.com/in/intissar-elqadi</a></li>
+            <li><strong>Github :</strong> <a href="https://github.com/intissar120" target="_blank">github.com/intissar-elqadi</a></li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <!-- Section Contact -->
-    <section class="bg-white p-6 rounded-lg shadow-md animate-slide-in">
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-        <p>Email : <a href="mailto:intissar.elqadi@gmail.com" class="text-gray-800 hover:text-gray-600 transition">intissar.elqadi@gmail.com</a></p>
-        <p>Téléphone : <a href="tel:+33749332772" class="text-gray-800 hover:text-gray-600 transition">+33 749 33 27 72</a></p>
-        <p>Localisation : Toulouse, 31100</p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/intissar-el-qadi-00b908307/" target="_blank" class="text-gray-800 hover:text-gray-600 transition">Mon profil LinkedIn</a></p>
-    </section>
-</main>
-
-<footer class="bg-gray-300 text-gray-800 py-4 text-center animate-fade-in">
-    <p>&copy; 2024 Intissar EL QADI. Tous droits réservés.</p>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Intissar EL QADI. Tous droits réservés.</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/intissar-elqadi" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/intissar-elqadi" target="_blank">Github</a></li>
+        </ul>
+    </div>
 </footer>
-
-<script>
-    // Animations
-    document.querySelectorAll('.animate-fade-in').forEach(el => {
-        el.classList.add('opacity-0');
-        setTimeout(() => el.classList.remove('opacity-0'), 100);
-    });
-
-    document.querySelectorAll('.animate-slide-in').forEach(el => {
-        el.classList.add('translate-x-full', 'opacity-0');
-        setTimeout(() => {
-            el.classList.remove('translate-x-full');
-            el.classList.remove('opacity-0');
-        }, 200);
-    });
-</script>
 </body>
-
 </html>
