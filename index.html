@@ -2,69 +2,212 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Intissar EL QADI</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@angular/core@latest"></script>
+    <title>Intissar El Qadi - Portfolio</title>
+    <style>
+        /* Reset et base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(45deg, #3494E6, #EC6EAD);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        /* À Propos */
+        .about-content {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+
+        /* Projets */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project-card {
+            width: calc(50% - 1rem);
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .project-links {
+            margin-top: 0.5rem;
+        }
+        .project-links a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+        }
+
+        /* Compétences */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background: #e0e0e0;
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+        }
+
+        /* Contact */
+        .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Intissar EL QADI</h1>
-    <h2>Développeuse Web</h2>
-    <p>Passionnée par l'informatique et curieuse d’apprendre de nouvelles technologies.</p>
+<!-- Header -->
+<header class="header">
+    <h1>Intissar El Qadi</h1>
+    <h2>Développeuse Web Frontend</h2>
+    <p>Passionnée par le développement web, étudiante à l'IPI Toulouse</p>
 </header>
 
-<section id="about">
-    <h2>À Propos</h2>
-    <p>Étudiante en 2ème année à l’IPI Toulouse, je me spécialise en développement web et j’aime relever des défis techniques.</p>
-</section>
-
-<section id="projects">
-    <h2>Projets</h2>
-    <div class="project">
-        <h3>FilmJQUERY</h3>
-        <p>Application utilisant jQuery pour gérer une liste de films.</p>
-        <a href="https://github.com/intissar120/FilmJQUERY">GitHub</a>
-    </div>
-    <div class="project">
-        <h3>CovidProjectAngular</h3>
-        <p>Projet Angular sur l’analyse des données COVID-19.</p>
-        <a href="https://github.com/intissar120/CovidProjectAngular">GitHub</a>
-    </div>
-    <div class="project">
-        <h3>AngularProject</h3>
-        <p>Projet basé sur Angular pour développer une application web.</p>
-        <a href="https://github.com/intissar120/AngularProject">GitHub</a>
-    </div>
-    <div class="project">
-        <h3>JS-Projects</h3>
-        <p>Collection de petits projets en JavaScript pour diverses fonctionnalités.</p>
-        <a href="https://github.com/intissar120/JS-Projects">GitHub</a>
-    </div>
-    <div class="project">
-        <h3>ProjetSymfony</h3>
-        <p>Application web développée avec le framework Symfony.</p>
-        <a href="https://github.com/intissar120/projetSymfony">GitHub</a>
+<!-- À Propos -->
+<section class="section">
+    <h2 class="section-title">À Propos de Moi</h2>
+    <div class="about-content">
+        <p>Actuellement en formation à l'École d'Informatique IPI de Toulouse, je poursuis mon parcours dans le développement web avec passion.</p>
+        <p>Mes expertises incluent le développement web avec HTML, CSS, JavaScript et des frameworks modernes.</p>
     </div>
 </section>
 
-<section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Angular, PHP, SQL</li>
-        <li>GitHub, Python</li>
-    </ul>
+<!-- Projets -->
+<section class="section">
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Projet Films jQuery</h3>
+            <p>Application web interactive de recherche de films</p>
+            <div class="project-links">
+                <a href="https://github.com/intissar120/FilmJQUERY">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Projet Covid Angular</h3>
+            <p>Application de suivi des données Covid-19</p>
+            <div class="project-links">
+                <a href="https://github.com/intissar120/CovidProjectAngular">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Projet Angular</h3>
+            <p>Projet démontrant mes compétences Angular</p>
+            <div class="project-links">
+                <a href="https://github.com/intissar120/AngularProject">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Projets JavaScript</h3>
+            <p>Collection de projets JavaScript</p>
+            <div class="project-links">
+                <a href="https://github.com/intissar120/JS-Projects">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Projet Symfony</h3>
+            <p>Application web développée avec Symfony</p>
+            <div class="project-links">
+                <a href="https://github.com/intissar120/projetSymfony">GitHub</a>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email : intissar.elqadi@gmail.com</p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/intissar-el-qadi-00b908307/">Mon profil</a></p>
+<!-- Compétences -->
+<section class="section">
+    <h2 class="section-title">Compétences</h2>
+    <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">SQL</span>
+    </div>
 </section>
 
-<footer>
-    <p>&copy; 2025 Intissar EL QADI | Tous droits réservés</p>
+<!-- Contact -->
+<section class="section contact">
+    <h2 class="section-title">Contactez-moi</h2>
+    <p>intissar.elqadi@gmail.com</p>
+    <div class="contact-links">
+        <a href="https://github.com/intissar120">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Intissar El Qadi. Tous droits réservés.</p>
 </footer>
 </body>
 </html>
