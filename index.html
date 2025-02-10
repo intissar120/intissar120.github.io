@@ -185,13 +185,34 @@
 <!-- Compétences -->
 <section class="section">
     <h2 class="section-title">Compétences</h2>
-    <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">PHP</span>
-        <span class="skill-tag">SQL</span>
+    <style>
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .skill-badge {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <div class="skills-container">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Angular</span>
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">PHP</span>
+        <span class="skill-badge">SQL</span>
     </div>
 </section>
 
