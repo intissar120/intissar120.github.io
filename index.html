@@ -1,145 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:C="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Intissar EL QADI</title>
+    <title>Portfolio - Intissar EL QADI</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@angular/core@latest"></script>
 </head>
 <body>
-<!-- Header -->
 <header>
-    <div class="container">
-        <h1>Intissar EL QADI</h1>
-        <h2>Étudiante en Développement Web</h2>
-        <p>Passionnée par l'informatique et curieuse d'apprendre de nouvelles technologies, je suis à la recherche d'opportunités pour consolider mes compétences techniques.</p>
-    </div>
+    <h1>Intissar EL QADI</h1>
+    <h2>Développeuse Web</h2>
+    <p>Passionnée par l'informatique et curieuse d’apprendre de nouvelles technologies.</p>
 </header>
 
-<!-- À propos -->
 <section id="about">
-    <div class="container">
-        <h2>À propos</h2>
-        <p>Je suis actuellement en 2ème année à l'école IPI Toulouse, spécialisée en développement web. Mon parcours académique et mes projets personnels m'ont permis d'acquérir des compétences solides en programmation et en gestion de projets. Je suis motivée par l'envie de créer des solutions innovantes et de contribuer à des projets ambitieux.</p>
-        <p><strong>Expertises :</strong> Développement web, création de bases de données, gestion de projets.</p>
-    </div>
+    <h2>À Propos</h2>
+    <p>Étudiante en 2ème année à l’IPI Toulouse, je me spécialise en développement web et j’aime relever des défis techniques.</p>
 </section>
 
-<!-- Projets -->
 <section id="projects">
-    <div class="container">
-        <h2>Projets</h2>
-
-        <!-- Projet 1 : FilmJQUERY -->
-        <div class="project">
-            <h3>FilmJQUERY</h3>
-            <p>Un projet de gestion de films utilisant jQuery pour interagir avec une API de films. Ce projet permet de rechercher des films, d'afficher leurs détails et de les ajouter à une liste de favoris.</p>
-            <p><strong>Outils :</strong> HTML, CSS, JavaScript, jQuery</p>
-            <p><strong>Liens :</strong>
-                <a href="https://github.com/intissar120/FilmJQUERY" target="_blank">Repository Github</a>
-            </p>
-            <img src="capture-filmjquery.png" alt="Capture du projet FilmJQUERY">
-        </div>
-
-        <!-- Projet 2 : CovidProjectAngular -->
-        <div class="project">
-            <h3>CovidProjectAngular</h3>
-            <p>Une application Angular qui affiche les statistiques mondiales sur le COVID-19. Ce projet utilise une API publique pour récupérer les données en temps réel et les afficher de manière interactive.</p>
-            <p><strong>Outils :</strong> Angular, TypeScript, HTML, CSS</p>
-            <p><strong>Liens :</strong>
-                <a href="https://github.com/intissar120/CovidProjectAngular" target="_blank">Repository Github</a>
-            </p>
-            <img src=""C:\Users\hp\Pictures\Screenshots\covidprojet.png"" alt="Capture du projet CovidProjectAngular">
-        </div>
-
-        <!-- Projet 3 : AngularProject -->
-        <div class="project">
-            <h3>AngularProject</h3>
-            <p>Un projet Angular qui démontre l'utilisation des composants, des services et du routage pour créer une application web dynamique. Ce projet inclut une gestion d'utilisateurs et des fonctionnalités CRUD.</p>
-            <p><strong>Outils :</strong> Angular, TypeScript, Bootstrap</p>
-            <p><strong>Liens :</strong>
-                <a href="https://github.com/intissar120/AngularProject" target="_blank">Repository Github</a>
-            </p>
-            <img src="capture-angularproject.png" alt="Capture du projet AngularProject">
-        </div>
-
-        <!-- Projet 4 : JS-Projects -->
-        <div class="project">
-            <h3>JS-Projects</h3>
-            <p>Une collection de petits projets JavaScript pour pratiquer les concepts de base et avancés de JavaScript. Ce projet inclut des exercices sur les fonctions, les événements, les manipulations du DOM, etc.</p>
-            <p><strong>Outils :</strong> JavaScript, HTML, CSS</p>
-            <p><strong>Liens :</strong>
-                <a href="https://github.com/intissar120/JS-Projects" target="_blank">Repository Github</a>
-            </p>
-            <img src="capture-jsprojects.png" alt="Capture du projet JS-Projects">
-        </div>
-
-        <!-- Projet 5 : projetSymfony -->
-        <div class="project">
-            <h3>projetSymfony</h3>
-            <p>Un projet Symfony qui met en œuvre une application web complète avec une base de données. Ce projet inclut la gestion des utilisateurs, des articles et des commentaires, ainsi que l'authentification.</p>
-            <p><strong>Outils :</strong> Symfony, PHP, Twig, MySQL</p>
-            <p><strong>Liens :</strong>
-                <a href="https://github.com/intissar120/projetSymfony" target="_blank">Repository Github</a>
-            </p>
-            <img src="capture-symfonyproject.png" alt="Capture du projet projetSymfony">
-        </div>
+    <h2>Projets</h2>
+    <div class="project">
+        <h3>FilmJQUERY</h3>
+        <p>Application utilisant jQuery pour gérer une liste de films.</p>
+        <a href="https://github.com/intissar120/FilmJQUERY">GitHub</a>
+    </div>
+    <div class="project">
+        <h3>CovidProjectAngular</h3>
+        <p>Projet Angular sur l’analyse des données COVID-19.</p>
+        <a href="https://github.com/intissar120/CovidProjectAngular">GitHub</a>
     </div>
 </section>
-<!-- Compétences -->
+
 <section id="skills">
-    <div class="container">
-        <h2>Compétences</h2>
-        <div class="skills-category">
-            <h3>Langages</h3>
-            <ul>
-                <li>HTML - Expert</li>
-                <li>CSS - Expert</li>
-                <li>JavaScript - Intermédiaire</li>
-                <li>PHP - Intermédiaire</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Frameworks</h3>
-            <ul>
-                <li>Bootstrap - Intermédiaire</li>
-                <li>React - Débutant</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Outils</h3>
-            <ul>
-                <li>Git/Github - Intermédiaire</li>
-                <li>MySQL - Intermédiaire</li>
-                <li>VirtualBox - Intermédiaire</li>
-            </ul>
-        </div>
-    </div>
+    <h2>Compétences</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Angular, PHP, SQL</li>
+        <li>GitHub, Python</li>
+    </ul>
 </section>
 
-<!-- Contact -->
 <section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter via :</p>
-        <ul>
-            <li><strong>Email :</strong> intissar.elqadi@gmail.com</li>
-            <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/intissar-el-qadi-00b908307/" target="_blank">linkedin.com/in/intissar-elqadi</a></li>
-            <li><strong>Github :</strong> <a href="https://github.com/intissar120" target="_blank">github.com/intissar-elqadi</a></li>
-        </ul>
-    </div>
+    <h2>Contact</h2>
+    <p>Email : intissar.elqadi@gmail.com</p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/intissar-el-qadi-00b908307/">Mon profil</a></p>
 </section>
 
-<!-- Footer -->
 <footer>
-    <div class="container">
-        <p>&copy; 2023 Intissar EL QADI. Tous droits réservés.</p>
-        <ul>
-            <li><a href="https://linkedin.com/in/intissar-elqadi" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/intissar-elqadi" target="_blank">Github</a></li>
-        </ul>
-    </div>
+    <p>&copy; 2025 Intissar EL QADI | Tous droits réservés</p>
 </footer>
 </body>
 </html>
